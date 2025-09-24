@@ -8,7 +8,7 @@
 	<meta name="mobile-web-app-capable" content="yes">
 	<title>{{ config_cache('app.name') ?? 'pixelfed' }}</title>
 	<meta property="og:site_name" content="{{ config_cache('app.name') ?? 'pixelfed' }}">
-	<meta property="og:title" content="{{ config_cache('app.name') ?? 'pixelfed' }}">
+        <meta property="og:title" content="{{ config_cache('app.og_title') ?? 'pixelfed' }}">
 	<meta property="og:type" content="article">
 	<meta property="og:url" content="{{route('site.about')}}">
 	<meta property="og:description" content="{{config_cache('app.short_description')}}">

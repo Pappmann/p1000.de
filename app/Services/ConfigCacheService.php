@@ -31,6 +31,7 @@ class ConfigCacheService
             return Cache::remember($cacheKey, $ttl, function () use ($key) {
                 $allowed = [
                     'app.name',
+                    'app.og_title',
                     'app.short_description',
                     'app.description',
                     'app.rules',

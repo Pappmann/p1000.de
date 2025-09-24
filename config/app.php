@@ -13,7 +13,8 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Pixelfed'),
+    'name' => env('APP_NAME', 'P1000'),
+    'og_title' => env('APP_OG_TITLE', env('APP_NAME', 'P1000')),
 
     /*
     |--------------------------------------------------------------------------

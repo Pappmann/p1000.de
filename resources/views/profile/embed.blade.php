@@ -7,7 +7,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <title>{{ $title ?? config_cache('app.name', 'Pixelfed') }}</title>
     <meta property="og:site_name" content="{{ config_cache('app.name', 'pixelfed') }}">
-    <meta property="og:title" content="{{ $title ?? config_cache('app.og_title') }}">
+    <meta property="og:title" content="{{ $title ?? config_cache('app.og_title', config_cache('app.name', 'Pixelfed')) }}">
     <meta property="og:type" content="profile">
     <meta property="og:url" content="{{$profile['url']}}">
     <meta name="medium" content="image">

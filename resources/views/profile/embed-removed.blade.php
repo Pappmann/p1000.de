@@ -10,7 +10,7 @@
 	<title>Pixelfed | 404 Embed Not Found</title>
 
 	<meta property="og:site_name" content="{{ config_cache('app.name', 'pixelfed') }}">
-        <meta property="og:title" content="{{ $title ?? config_cache('app.og_title') }}">
+        <meta property="og:title" content="{{ $title ?? config_cache('app.og_title', config_cache('app.name', 'Pixelfed')) }}">
 	<meta name="medium" content="image">
 	<meta name="theme-color" content="#10c5f8">
 	<meta name="apple-mobile-web-app-capable" content="yes">

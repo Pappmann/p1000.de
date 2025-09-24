@@ -9,7 +9,7 @@
 	<title>{{ $title ?? config_cache('app.name') }}</title>
 	<link rel="manifest" href="{{url('/manifest.json')}}">
 	<meta property="og:site_name" content="{{ config_cache('app.name') }}">
-        <meta property="og:title" content="{{ $title ?? config_cache('app.og_title') }}">
+    <meta property="og:title" content="{{ $title ?? config_cache('app.og_title', config_cache('app.name', 'Pixelfed')) }}">
 	<meta property="og:type" content="article">
 	<meta property="og:url" content="{{url(request()->url())}}">
 	@stack('meta')

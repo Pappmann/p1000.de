@@ -8,18 +8,18 @@
 
 	<meta name="mobile-web-app-capable" content="yes">
 
-	<title>{{ config_cache('app.name', 'Pixelfed') }}</title>
+	<title>{{ config_cache('app.name', 'P1000') }}</title>
 
 	<link rel="canonical" href="{{ request()->url() }}" />
 
-	<meta property="og:site_name" content="{{ config_cache('app.name', 'pixelfed') }}" />
-        <meta property="og:title" content="{{ config_cache('app.og_title', config_cache('app.name', 'Pixelfed')) }}" />
+	<meta property="og:site_name" content="{{ config_cache('app.name', 'P1000') }}" />
+        <meta property="og:title" content="{{ config_cache('app.og_title', config_cache('app.name', 'P1000')) }}" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="{{request()->url()}}" />
 	<meta property="og:image" content="{{ config_cache('app.banner_image') ?? url('storage/headers/default.jpg')}}" />
 	<meta property="og:description" content="{{ config_cache('app.short_description') ?? 'Decentralized photo sharing social media powered by Pixelfed' }}" />
 	<meta name="description" content="{{ config_cache('app.short_description') ?? 'Decentralized photo sharing social media powered by Pixelfed' }}" />
-        <meta name="twitter:title" content="{{ config_cache('app.og_title', config_cache('app.name', 'Pixelfed')) }}" />
+        <meta name="twitter:title" content="{{ config_cache('app.og_title', config_cache('app.name', 'P1000')) }}" />
     <meta name="twitter:description" content="{{ config_cache('app.short_description') ?? 'Decentralized photo sharing social media powered by Pixelfed' }}" />
     <meta name="twitter:image" content="{{ config_cache('app.banner_image') ?? url('storage/headers/default.jpg')}}" />
     <meta name="twitter:card" content="summary_large_image" />
